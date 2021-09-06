@@ -29,9 +29,9 @@ public class Course {
             throw new IllegalArgumentException("courseCode too small or too big.");
         if (ecs < 0)
             throw new IllegalArgumentException("Cannot have negative ECs.");
-        if (!courseCode.toUpperCase().equals(courseCode)) {
-            throw new IllegalArgumentException("Coursecode is not in uppercase");
-        }
+            if (!courseCode.toUpperCase().equals(courseCode)) {
+                throw new IllegalArgumentException("Coursecode is not in uppercase");
+            }
         this.courseCode = courseCode;
         this.name = name;
         this.ecs = ecs;

@@ -37,7 +37,7 @@ class CourseTest {
 
         // Assert
         assertThat(A).isEqualTo(B);
-        //assertThat(A).hasSameHashCodeAs(B);
+        assertThat(A).hasSameHashCodeAs(B);
 
     }
 

@@ -28,12 +28,12 @@ class CourseTest {
     }
 
     @Test
-    public void course_withSameCodesAreLogicallyEqual(){
+    public void course_withSameCodesAreLogicallyEqual() {
         // Arrange
 
         // Act
-        Course A = new Course(VALID_NAME,VALID_CODE,VALID_EC);
-        Course B = new Course(VALID_NAME,VALID_CODE,VALID_EC);
+        Course A = new Course(VALID_NAME, VALID_CODE, VALID_EC);
+        Course B = new Course(VALID_NAME, VALID_CODE, VALID_EC);
 
         // Assert
         assertThat(A).isEqualTo(B);
@@ -43,9 +43,9 @@ class CourseTest {
 
     /**
      * ASSUMPTION: objects in parameter list should not be NULL
-     *
+     * <p>
      * methods below check for this
-     *
+     * <p>
      * TODO: check assumption with designer
      */
     @Test

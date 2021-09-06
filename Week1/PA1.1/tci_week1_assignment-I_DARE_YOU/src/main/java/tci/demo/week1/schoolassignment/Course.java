@@ -1,6 +1,7 @@
 package tci.demo.week1.schoolassignment;
 
 import java.util.Locale;
+import java.util.Objects;
 
 /**
  * A Course is an IMMUTABLE object with a given name, code and ec.
@@ -66,6 +67,19 @@ public class Course {
 
     public int getEc() {
         return ec;
+    }
+
+    @Override
+    public boolean equals(Object otherCourse) {
+        if (this == otherCourse) return true;
+        if (!(otherCourse instanceof Course)) return false;
+        Course course = (Course) otherCourse;
+        return code.equals(course.code);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(code);
     }
 }
 

@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="PA1_assignment_1.1-I_DARE_YOU_solution_with_implementation_code" />
         <module name="TCI_demo_all_mavenversion" />
       </profile>
     </annotationProcessing>
