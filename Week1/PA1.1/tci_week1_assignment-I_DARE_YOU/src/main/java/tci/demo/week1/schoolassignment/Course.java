@@ -1,6 +1,5 @@
 package tci.demo.week1.schoolassignment;
 
-import java.util.Locale;
 import java.util.Objects;
 
 /**

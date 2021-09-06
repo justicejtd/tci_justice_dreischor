@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="46929687-1a13-46fc-9213-bb20166332b0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../FirstUnitTest/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FirstUnitTest/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FirstUnitTest/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FirstUnitTest/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FirstUnitTest/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FirstUnitTest/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FirstUnitTest/src/main/java/Money.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FirstUnitTest/src/test/java/MoneyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/StringManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StringManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PA1.1/tci_week1_assignment-I_DARE_YOU/src/main/java/tci/demo/week1/schoolassignment/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PA1.1/tci_week1_assignment-I_DARE_YOU/src/main/java/tci/demo/week1/schoolassignment/Course.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1xmc2anJCjjnSTq2FVYZXIVnGgw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PA1.1/PA1_assignment_1.1-I_DARE_YOU_solution_with_implementation_code" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.StringManagerTest.reverse_shouldBeTheSameLengthAsInputValue">
+    <configuration name="StringManagerTest.reverse_shouldBeTheSameLengthAsInputValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StringReverse" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StringManagerTest" />
+      <option name="METHOD_NAME" value="reverse_shouldBeTheSameLengthAsInputValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringManagerTest.reverse_shouldNotBeTheSameAsTheInputValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StringReverse" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StringManagerTest" />
+      <option name="METHOD_NAME" value="reverse_shouldNotBeTheSameAsTheInputValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringManagerTest.reverse_shouldThrowIllegalArgumentsExceptionIfInputIsABlankString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StringReverse" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StringManagerTest" />
+      <option name="METHOD_NAME" value="reverse_shouldThrowIllegalArgumentsExceptionIfInputIsABlankString(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringManagerTest.reverse_shouldThrowIllegalArgumentsExceptionIfInputIsAnEmptyString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StringReverse" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StringManagerTest" />
+      <option name="METHOD_NAME" value="reverse_shouldThrowIllegalArgumentsExceptionIfInputIsAnEmptyString(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringManagerTest.reverse_shouldThrowIllegalArgumentsExceptionIfInputLengthIsLessThan2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StringReverse" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StringManagerTest" />
+      <option name="METHOD_NAME" value="reverse_shouldThrowIllegalArgumentsExceptionIfInputLengthIsLessThan2(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StringManagerTest.reverse_shouldBeTheSameLengthAsInputValue" />
+        <item itemvalue="JUnit.StringManagerTest.reverse_shouldNotBeTheSameAsTheInputValue" />
+        <item itemvalue="JUnit.StringManagerTest.reverse_shouldThrowIllegalArgumentsExceptionIfInputIsABlankString" />
+        <item itemvalue="JUnit.StringManagerTest.reverse_shouldThrowIllegalArgumentsExceptionIfInputIsAnEmptyString" />
+        <item itemvalue="JUnit.StringManagerTest.reverse_shouldThrowIllegalArgumentsExceptionIfInputLengthIsLessThan2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46929687-1a13-46fc-9213-bb20166332b0" name="Changes" comment="" />
+      <created>1630963499951</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1630963499951</updated>
+      <workItem from="1630963501526" duration="4770000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestCherrySettings">
+    <option name="namingConvention" value="Camel Case" />
+    <option name="testFramework" value="JUNIT5" />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
