@@ -5,25 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46929687-1a13-46fc-9213-bb20166332b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../FirstUnitTest/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FirstUnitTest/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FirstUnitTest/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FirstUnitTest/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FirstUnitTest/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FirstUnitTest/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FirstUnitTest/src/main/java/Money.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FirstUnitTest/src/test/java/MoneyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StringManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StringManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PA1.1/tci_week1_assignment-I_DARE_YOU/src/main/java/tci/demo/week1/schoolassignment/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PA1.1/tci_week1_assignment-I_DARE_YOU/src/main/java/tci/demo/week1/schoolassignment/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FahrToCelsConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/FahrToCelsConverterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +121,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630963499951</updated>
-      <workItem from="1630963501526" duration="4770000" />
+      <workItem from="1630963501526" duration="5930000" />
     </task>
     <servers />
   </component>
