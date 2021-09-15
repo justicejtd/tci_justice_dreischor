@@ -5,9 +5,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
+import org.mockito.internal.matchers.Not;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatExceptionOfType;
+import static org.mockito.Mockito.mock;
 
 class StudentTest {
     private final String valid_name = "Maya LastName";
@@ -111,8 +113,16 @@ class StudentTest {
      */
     @Test
     public void addPassedCourse_shouldAddAPassedCourseProperly() throws Exception {
-        //TODO auto-generated
-        Assertions.fail("Not yet implemented");
+        // Arrange
+        Course course1 = mock(Course.class);
+        Course course2 = mock(Course.class);
+        Course course3 = mock(Course.class);
+        // Act
+        student.addPassedCourse(course1);
+        student.addPassedCourse(course2);
+        student.addPassedCourse(course3);
+        // Assert
+        assertThat(student.getCourses().size()).isEqualTo(3);
     }
 
     /**
@@ -120,9 +130,15 @@ class StudentTest {
      * @see Student#addPassedCourse(Course)
      */
     @Test
-    public void addPassedCourse_shouldThrowAnExceptionWhenCourseAlreadyHasBeenPassed() throws Exception {
-        //TODO auto-generated
-        Assertions.fail("Not yet implemented");
+    public void addPassedCourse_shouldThrowAnIllegalExceptionWhenCourseAlreadyHasBeenPassed() throws Exception {
+        // Arrange
+        Course course = mock(Course.class);
+
+        // Assert
+        assertThatExceptionOfType(Exception.class).isThrownBy(() -> {
+            student.addPassedCourse(course);
+            student.addPassedCourse(course);
+        });
     }
 
     /**
@@ -130,9 +146,13 @@ class StudentTest {
      * @see Student#removePassedCourse(Course)
      */
     @Test
-    public void removePassedCourse_shouldThrowNotFoundExceptionWhenCourseIsNotFound() throws Exception {
-        //TODO auto-generated
-        Assertions.fail("Not yet implemented");
+    public void removePassedCourse_shouldThrowNotFoundExceptionWhenCourseIsNotFound() throws NotFoundException {
+        // Arrange DOCS
+        Course course = mock(Course.class);
+        // Assert
+        assertThatExceptionOfType(NotFoundException.class).isThrownBy(() ->
+                new Student(valid_studentNumber, valid_name).removePassedCourse(course)
+        );
     }
 
     /**
@@ -144,7 +164,7 @@ class StudentTest {
     public void setName_shouldThrowIllegalArgumentExceptionWhenNameParameterIsNotFullName(String name) throws IllegalArgumentException {
         // Assert
         assertThatExceptionOfType(IllegalArgumentException.class).isThrownBy(() ->
-                new Student(valid_studentNumber, name).setName(name));
+                student.setName(name));
     }
 
     /**
@@ -176,8 +196,27 @@ class StudentTest {
      * @see Student#removePassedCourse(Course)
      */
     @Test
-    public void removePassedCourse_shouldRemoveAPassedCourse() throws Exception {
-        //TODO auto-generated
-        Assertions.fail("Not yet implemented");
+    public void removePassedCourse_shouldRemoveAPassedCourse() throws NotFoundException {
+        // Arrange
+        Course course1 = mock(Course.class);
+        Course course2 = mock(Course.class);
+        // Act
+        student.addPassedCourse(course1);
+        student.addPassedCourse(course2);
+        student.removePassedCourse(course1);
+        // Assert
+        assertThat(student.getCourses().size()).isEqualTo(1);
+    }
+
+    /**
+     * @verifies throw null pointer exception when course is null
+     * @see Student#addPassedCourse(Course)
+     */
+    @Test
+    public void addPassedCourse_shouldThrowNullPointerExceptionWhenCourseIsNull() throws NullPointerException {
+        // Assert
+        assertThatExceptionOfType(NullPointerException.class).isThrownBy(() ->
+                student.addPassedCourse(null)
+                );
     }
 }

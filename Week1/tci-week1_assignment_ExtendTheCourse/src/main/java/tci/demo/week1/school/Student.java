@@ -19,7 +19,7 @@ public class Student {
     // TODO
     private final int studentNumber;
     private String name;
-    private ArrayList<Course> courses;
+    private final ArrayList<Course> courses = new ArrayList<>();
     private int semester;
 
     /**
@@ -43,6 +43,10 @@ public class Student {
         this.studentNumber = studentNumber;
         setName(name);
         setSemester(1);
+    }
+
+    public ArrayList<Course> getCourses() {
+        return courses;
     }
 
     /**
@@ -73,10 +77,17 @@ public class Student {
      *
      * @param course
      * @should add a passed course properly
-     * @should throw an exception when course already has been passed
+     * @should throw an illegal exception when course already has been passed
+     * @should throw null pointer exception when course is null
      */
-    public void addPassedCourse(Course course) {
-        // TODO
+    public void addPassedCourse(Course course) throws IllegalArgumentException, NullPointerException {
+        if (course == null) {
+            throw new NullPointerException("Course is null, please enter a valid course");
+        }
+        if (courses.contains(course)) {
+            throw new IllegalArgumentException("Course already been passed!");
+        }
+        getCourses().add(course);
     }
 
     /**
@@ -87,8 +98,12 @@ public class Student {
      * @should throw not found exception when course is not found
      * @should remove a passed course
      */
+
     public void removePassedCourse(Course course) throws NotFoundException {
-        // TODO
+        if (!(getCourses().contains(course))) {
+            throw new NotFoundException("Course not found, please enter a valid Course!");
+        }
+        courses.remove(course);
     }
 
     public int getStudentNumber() {
