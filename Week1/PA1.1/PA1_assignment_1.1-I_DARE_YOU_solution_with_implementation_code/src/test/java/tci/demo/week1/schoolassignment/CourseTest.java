@@ -60,9 +60,8 @@ class CourseTest {
     @Test
     public void nullCodeShouldThrowIllegalArgumentException() {
         // arrange, // act, // assert
-        assertThatExceptionOfType(IllegalArgumentException.class).isThrownBy(() -> {
-            new Course(VALID_NAME, null, VALID_EC);
-        });
+        assertThatExceptionOfType(IllegalArgumentException.class).isThrownBy(() ->
+                new Course(VALID_NAME, null, VALID_EC));
 
     }
 

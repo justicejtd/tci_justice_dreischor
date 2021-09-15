@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46929687-1a13-46fc-9213-bb20166332b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/FahrToCelsConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FahrToCelsConverterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tci-week1_assignment_ExtendTheCourse/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tci-week1_assignment_ExtendTheCourse/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tci-week1_assignment_ExtendTheCourse/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tci-week1_assignment_ExtendTheCourse/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tci-week1_assignment_ExtendTheCourse/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tci-week1_assignment_ExtendTheCourse/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tci-week1_assignment_ExtendTheCourse/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tci-week1_assignment_ExtendTheCourse/src/main/java/tci/demo/week1/school/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tci-week1_assignment_ExtendTheCourse/src/main/java/tci/demo/week1/school/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tci-week1_assignment_ExtendTheCourse/src/main/java/tci/demo/week1/school/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tci-week1_assignment_ExtendTheCourse/src/main/java/tci/demo/week1/school/Package week1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tci-week1_assignment_ExtendTheCourse/src/main/java/tci/demo/week1/school/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tci-week1_assignment_ExtendTheCourse/src/test/java/tci/demo/week1/school/CourseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tci-week1_assignment_ExtendTheCourse/src/test/java/tci/demo/week1/school/StudentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FahrToCelsConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FahrToCelsConverter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +54,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PA1.1/PA1_assignment_1.1-I_DARE_YOU_solution_with_implementation_code" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -52,7 +65,16 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StringManagerTest.reverse_shouldBeTheSameLengthAsInputValue">
+  <component name="RunManager" selected="JUnit.FahrToCelsConverterTest">
+    <configuration name="FahrToCelsConverterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StringReverse" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FahrToCelsConverterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StringManagerTest.reverse_shouldBeTheSameLengthAsInputValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="StringReverse" />
       <option name="PACKAGE_NAME" value="" />
@@ -93,23 +115,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringManagerTest.reverse_shouldThrowIllegalArgumentsExceptionIfInputLengthIsLessThan2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="StringReverse" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StringManagerTest" />
-      <option name="METHOD_NAME" value="reverse_shouldThrowIllegalArgumentsExceptionIfInputLengthIsLessThan2(java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FahrToCelsConverterTest" />
         <item itemvalue="JUnit.StringManagerTest.reverse_shouldBeTheSameLengthAsInputValue" />
         <item itemvalue="JUnit.StringManagerTest.reverse_shouldNotBeTheSameAsTheInputValue" />
         <item itemvalue="JUnit.StringManagerTest.reverse_shouldThrowIllegalArgumentsExceptionIfInputIsABlankString" />
         <item itemvalue="JUnit.StringManagerTest.reverse_shouldThrowIllegalArgumentsExceptionIfInputIsAnEmptyString" />
-        <item itemvalue="JUnit.StringManagerTest.reverse_shouldThrowIllegalArgumentsExceptionIfInputLengthIsLessThan2" />
       </list>
     </recent_temporary>
   </component>
@@ -122,6 +134,7 @@
       <option name="presentableId" value="Default" />
       <updated>1630963499951</updated>
       <workItem from="1630963501526" duration="5930000" />
+      <workItem from="1631008275905" duration="4270000" />
     </task>
     <servers />
   </component>
@@ -142,6 +155,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
