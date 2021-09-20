@@ -18,7 +18,7 @@ public class MessengerTest {
         // Arrange
         Messenger messenger = new Messenger(mailServer, templateEngine);
         // Act
-        //messenger.sendMessage(client, template);
+        messenger.sendMessage(client, template);
         // Verify
         verify(templateEngine).prepareMessage(template, client);
         verify(mailServer).send("test@hotmail.com", "msgContent");
