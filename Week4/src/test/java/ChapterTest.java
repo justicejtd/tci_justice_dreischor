@@ -8,7 +8,6 @@ public class ChapterTest {
     private final String name = "ChapterName";
     private final int number = 1;
 
-
     /**
      * @verifies uniquely be identified by name and number
      * @see Chapter#Chapter(String, int, Chapter)
@@ -29,7 +28,7 @@ public class ChapterTest {
      * @see Chapter#Chapter(String, int, Chapter)
      */
     @Test
-    public void Chapter_shouldAddParentChapterToTheCurrentChapterAndViceVersaWhenParentIsAvailable() throws Exception {
+    public void Chapter_shouldAddParentChapterToTheCurrentChapterAndViceVersaWhenParentIsAvailable() {
         // Arrange
         Chapter parent = new Chapter(name, number, null);
         Chapter subChapter = new Chapter(name, number, parent);
@@ -48,22 +47,9 @@ public class ChapterTest {
         // Arrange
         Chapter chapter1 = new Chapter(name, number, null);
         Chapter subChapter1 = new Chapter(name, number, chapter1);
-        Chapter subChapter2 = new Chapter(name, number, chapter1);
-        Chapter subChapter3 = new Chapter(name, number, chapter1);
+        new Chapter(name, number, chapter1);
 
         // Act
         assertThat(chapter1.getSubChapters()).containsOnlyOnce(subChapter1);
-
     }
-
-//    /**
-//     * @verifies not throw null pointer exception if parent is null
-//     * @see Chapter#Chapter(String, int, Chapter)
-//     */
-//    @Test
-//    public void Chapter_shouldNotThrowNullPointerExceptionIfParentIsNull() throws NullPointerException {
-//        assertThatExceptionOfType(NullPointerException.class).isThrownBy(() -> {
-//            Chapter chapter = new Chapter(name, number, null);
-//        });
-//    }
 }

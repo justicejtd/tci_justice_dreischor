@@ -11,11 +11,10 @@ public class Chapter {
      * @param number
      * @param parent
      * @should uniquely be identified by name and number
-     * @should not throw null pointer exception if parent is null
      * @should add parent chapter to the current chapter and vice versa when parent is available
      * @should not allowed duplicate elements in the collection of sub-chapters
      */
-    public Chapter(String name, int number, Chapter parent) {
+    public Chapter(String name, int number, Chapter parent) throws IllegalArgumentException {
         this.name = name;
         this.number = number;
         this.parent = parent;
@@ -23,6 +22,14 @@ public class Chapter {
         if (parent != null) {
             parent.addSubChapter(this);
         }
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getNumber() {
+        return number;
     }
 
     @Override
