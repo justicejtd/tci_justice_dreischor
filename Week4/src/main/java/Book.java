@@ -39,16 +39,18 @@ public class Book {
 
     /**
      * @should print 1 line for each chapter
-     * @should make sure all chapter are printed
      * @should print chapter id and name for each line
      * @should print id which are the chapter numbers of all parent chapters of a chapter and the chapter number itself is seperated by a '. '
      */
     public void printTableOfContents() {
         for (Chapter chapter: chapters) {
-            lines.add(chapter.getNumber() + chapter.getName());
+            lines.add(chapter.getNumber() + ". " + chapter.getName());
             if (chapter.getSubChapters().size() > 0) {
                 for (Chapter subChapter: chapter.getSubChapters()) {
-                    lines.add(subChapter.getNumber() + subChapter.getName());
+                    lines.add(chapter.getNumber() + "." + subChapter.getNumber() + " " + subChapter.getName());
+                    if (subChapter.getSubChapters().size() > 0) {
+                        printTableOfContents();
+                    }
                 }
             }
         }
