@@ -16,6 +16,7 @@ import java.util.HashSet;
 
 public class RaceResultsService {
     public HashSet<Client1> clients = new HashSet<>();
+    public HashSet<Message> messages = new HashSet<>();
 
     /**
      * @should not add already exiting subscribers
@@ -33,7 +34,9 @@ public class RaceResultsService {
      */
     public void sendMessage(Message message) {
         for (Client1 c : clients) {
-            c.receive(message);
+            if (!c.getMessages().contains(message)) {
+                c.receive(message);
+            }
         }
     }
 

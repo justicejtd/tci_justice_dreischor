@@ -61,17 +61,13 @@ class RaceResultsServiceTest {
         ArrayList<Message> messages = new ArrayList<>();
         messages.add(message);
         messages.add(mock(Message.class));
-        messages.add(mock(Message.class));
         // Act
-        //when(client1.getMessages()).thenReturn(messages);
+        when(client1.getMessages()).thenReturn(messages);
         raceResultsService.addSubscriber(client1);
         raceResultsService.sendMessage(message);
-        raceResultsService.sendMessage(message);
-
-        //raceResultsService.sendMessage(message);
 
         // Verify
-        verify(client1).receive(message);
+        verify(client1, never()).receive(message);
     }
 
     /**
