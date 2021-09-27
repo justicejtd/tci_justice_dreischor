@@ -12,7 +12,7 @@ import java.util.Objects;
  * A student is identified by studentNumber and name.
  * A student gets semester number 1 when enrolled for the first time (e.g., new regular bachelor students).
  * studentnumber never changes. the name can change.
- *
+ * <p>
  * semesters range from 1..8
  * with a unique student number, consisting of 5 digits.
  */
@@ -24,7 +24,7 @@ public class Student_withTestSpecification implements IStudent {
      * Should be used when student is enrolled in the first semester (e.g., regular bachelor students).
      *
      * @param studentNumber student number of 5 digits.
-     * @param name     full full name of the student, e.g., Joe van der Smith
+     * @param name          full full name of the student, e.g., Joe van der Smith
      * @throws IllegalArgumentException Exception is thrown is studentNumber is not a positive 5-digits integer,
      *                                  or semester is not in range [1..8].
      * @should
@@ -40,10 +40,10 @@ public class Student_withTestSpecification implements IStudent {
 
     /**
      * get the total ECs from all passed courses.
+     *
      * @return number of ECs.
      * @should return 0 when no courses are passed
      * @should return sum of individual passed courses which were added
-     *
      */
     @Override
     public int getTotalECs() {
@@ -52,6 +52,7 @@ public class Student_withTestSpecification implements IStudent {
 
     /**
      * adds a passed course to a student. a student can only pass a course once.
+     *
      * @param course
      * @should add nothing when course is null
      * @should add a course when it's not present yet
@@ -64,6 +65,7 @@ public class Student_withTestSpecification implements IStudent {
 
     /**
      * removes a passed course from a student.
+     *
      * @param course passed course to remove
      * @throws NotFoundException when course is not found
      * @should remove a course when it is present
@@ -96,7 +98,7 @@ public class Student_withTestSpecification implements IStudent {
 
     @Override
     public void setMentor(String mentor) {
-//TODO
+        //TODO
     }
 
 

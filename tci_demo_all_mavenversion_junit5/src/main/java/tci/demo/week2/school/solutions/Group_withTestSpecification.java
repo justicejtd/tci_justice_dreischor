@@ -1,6 +1,9 @@
 package tci.demo.week2.school.solutions;
 
-import tci.demo.week1.school.Student;
+import tci.demo.week2.school.Student;
+
+import java.util.ArrayList;
+import java.util.Objects;
 
 /**
  * Group_withTestSpecification represents a group of unique students, e.g. a class e-s72,
@@ -14,6 +17,9 @@ import tci.demo.week1.school.Student;
  */
 public class Group_withTestSpecification {
 
+    private final ArrayList<Student> students = new ArrayList<>();
+    private final String name;
+    private final String defaultName = "unknown";
 
     /**
      * Creates a group with a default name "unknown"
@@ -21,7 +27,7 @@ public class Group_withTestSpecification {
      * @should create group with default name when no name is given
      */
     public Group_withTestSpecification() {
-        //TODO
+        name = defaultName;
     }
 
     /**
@@ -34,7 +40,10 @@ public class Group_withTestSpecification {
      * @should show that different groups are not equal
      */
     public Group_withTestSpecification(String name) {
-        //TODO
+        if (name == null) {
+            name = defaultName;
+        }
+        this.name = name;
     }
 
 
@@ -47,7 +56,11 @@ public class Group_withTestSpecification {
      * @should not add a student twice to the group
      */
     public void addStudent(Student student) {
-        //TODO
+        if (student != null) {
+            if (!getStudents().contains(student)) {
+                getStudents().add(student);
+            }
+        }
     }
 
     /**
@@ -58,7 +71,9 @@ public class Group_withTestSpecification {
      * @should leave current assigned mentor unchanged when mentor is null
      */
     public void setMentor(String mentor) {
-        //TODO
+        for (Student s : getStudents()) {
+            s.setMentor(mentor);
+        }
     }
 
     /**
@@ -68,7 +83,13 @@ public class Group_withTestSpecification {
      * @should return student when student with given ID was added to the group before
      */
     public Student getStudentById(int studentNumber) {
-        return null;//TODO
+        Student foundStudent = null;
+        for (Student s : getStudents()) {
+            if (s.getStudentNumber() == studentNumber)
+                foundStudent = s;
+            break;
+        }
+        return foundStudent;
     }
 
     /**
@@ -77,7 +98,15 @@ public class Group_withTestSpecification {
      * @should return 1 higher when student is added
      */
     public int getNumberOfStudents() {
-        return 0;//TODO
+        return getStudents().size();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public ArrayList<Student> getStudents() {
+        return students;
     }
 
     /******************************************************
@@ -102,6 +131,16 @@ public class Group_withTestSpecification {
      *   (but not present to keep demo code short)
      *
      ********************************************************/
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Group_withTestSpecification)) return false;
+        Group_withTestSpecification group = (Group_withTestSpecification) o;
+        return Objects.equals(getName(), group.getName());
+    }
 
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName());
+    }
 }
