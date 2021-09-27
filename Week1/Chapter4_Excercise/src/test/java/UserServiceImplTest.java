@@ -1,7 +1,9 @@
-import org.junit.jupiter.api.Assertions;
+import raceResultsService.interfaces.SecurityService;
+import raceResultsService.interfaces.User;
+import raceResultsService.interfaces.UserDAO;
 import org.junit.jupiter.api.Test;
+import raceResultsService.models.UserServiceImpl;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 class UserServiceImplTest {

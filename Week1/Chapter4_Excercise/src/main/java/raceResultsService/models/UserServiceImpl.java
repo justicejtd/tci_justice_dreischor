@@ -1,3 +1,9 @@
+package raceResultsService.models;
+
+import raceResultsService.interfaces.SecurityService;
+import raceResultsService.interfaces.User;
+import raceResultsService.interfaces.UserDAO;
+
 public class UserServiceImpl {
 
     private UserDAO userDAO;

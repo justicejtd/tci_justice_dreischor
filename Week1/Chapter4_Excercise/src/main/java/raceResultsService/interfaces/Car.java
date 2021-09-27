@@ -1,3 +1,5 @@
+package raceResultsService.interfaces;
+
 public interface Car {
 
     boolean needsFuel();

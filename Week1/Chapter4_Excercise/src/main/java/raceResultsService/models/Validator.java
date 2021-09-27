@@ -1,3 +1,5 @@
+package raceResultsService.models;
+
 import org.assertj.core.api.ThrowableAssert;
 
 public class Validator {

@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.Test;
-import org.mockito.verification.VerificationMode;
+import raceResultsService.models.*;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 public class MessengerTest {

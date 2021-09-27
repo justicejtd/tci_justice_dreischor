@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.Test;
+import raceResultsService.models.Validator;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatExceptionOfType;

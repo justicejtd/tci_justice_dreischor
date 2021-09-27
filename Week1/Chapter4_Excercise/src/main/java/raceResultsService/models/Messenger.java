@@ -1,3 +1,5 @@
+package raceResultsService.models;
+
 public class Messenger {
     MailServer mailServer;
     TemplateEngine templateEngine;
