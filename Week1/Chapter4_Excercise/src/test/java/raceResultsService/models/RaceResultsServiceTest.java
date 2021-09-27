@@ -120,25 +120,10 @@ class RaceResultsServiceTest {
         HorseRace horseRace = mock(HorseRace.class);
         // Act
         when(horseRace.getResult()).thenReturn(message);
-        raceResultsService.addSubscriber(client1);
+        raceResultsService.addSubscriber(client1, horseRace);
         raceResultsService.sendMessage(horseRace);
         // Verify
         verify(client1).receive(message);
-    }
-
-    /**
-     * @verifies initialize parameters properly
-     * @see RaceResultsService#addSubscriber(Client1, RaceCategory)
-     */
-    @Test
-    public void addSubscriber_shouldInitializeParametersProperly() {
-        // Arrange
-        HorseRace horseRace = mock(HorseRace.class);
-        Subscriber subscriber = new Subscriber(client1, horseRace);
-        // Act
-        raceResultsService.addSubscriber(client1, horseRace);
-        // Assert
-        verify(raceResultsService.subscribers).add(subscriber);
     }
 
     /**
