@@ -22,9 +22,9 @@ import java.util.HashSet;
  */
 
 /**
- * raceResultsService.models.RaceResultsService should send messages with the results of different categories of race - e.g.
- * horse races, F1 races, boat-races, etc. Subscribers should be able to subscribe to selected categories.
- * Make sure they receive only messages related to the ones they have signed up for.
+ Each message sent by RaceResultsService should be logged. Introduce a logging collaborator,
+ and make sure that the date and text of each message is logged. Do not implement the logging
+ mechanism: concentrate on the interactions between the service and its collaborator.
  */
 
 public class RaceResultsService {

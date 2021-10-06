@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>tci.demo.week3.legacycode</OriginalElement>
+  <nodes>
+    <node x="17.987760416666674" y="80.0">tci.demo.week3.legacycode.Zebra</node>
+    <node x="47.300260416666674" y="160.0">tci.demo.week3.legacycode.ManagingCompany</node>
+    <node x="153.83151041666667" y="80.0">tci.demo.week3.legacycode.Zoo</node>
+    <node x="6.237760416666674" y="240.0">tci.demo.week3.legacycode.ManagingCompanyTest</node>
+    <node x="78.58151041666667" y="0.0">tci.demo.week3.legacycode.Animal</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="tci.demo.week3.legacycode.Zoo" target="tci.demo.week3.legacycode.Animal">
+      <point x="0.0" y="-15.0" />
+      <point x="189.83151041666667" y="55.0" />
+      <point x="150.58151041666667" y="55.0" />
+      <point x="24.0" y="15.0" />
+    </edge>
+    <edge source="tci.demo.week3.legacycode.ManagingCompany" target="tci.demo.week3.legacycode.Zoo">
+      <point x="21.0" y="-15.0" />
+      <point x="152.30026041666667" y="135.0" />
+      <point x="165.83151041666667" y="135.0" />
+      <point x="-24.0" y="15.0" />
+    </edge>
+    <edge source="tci.demo.week3.legacycode.ManagingCompany" target="tci.demo.week3.legacycode.Zebra">
+      <point x="-63.0" y="-15.0" />
+      <point x="68.30026041666667" y="135.0" />
+      <point x="72.98776041666667" y="135.0" />
+      <point x="11.0" y="15.0" />
+    </edge>
+    <edge source="tci.demo.week3.legacycode.Zebra" target="tci.demo.week3.legacycode.Animal">
+      <point x="0.0" y="-15.0" />
+      <point x="61.987760416666674" y="55.0" />
+      <point x="102.58151041666667" y="55.0" />
+      <point x="-24.0" y="15.0" />
+    </edge>
+    <edge source="tci.demo.week3.legacycode.ManagingCompanyTest" target="tci.demo.week3.legacycode.Zoo">
+      <point x="80.0" y="-15.0" />
+      <point x="186.23776041666667" y="215.0" />
+      <point x="225.80026041666667" y="215.0" />
+      <point x="225.80026041666667" y="135.0" />
+      <point x="213.83151041666667" y="135.0" />
+      <point x="24.0" y="15.0" />
+    </edge>
+    <edge source="tci.demo.week3.legacycode.ManagingCompanyTest" target="tci.demo.week3.legacycode.ManagingCompany">
+      <point x="0.0" y="-15.0" />
+      <point x="106.23776041666667" y="215.0" />
+      <point x="89.30026041666667" y="215.0" />
+      <point x="-42.0" y="15.0" />
+    </edge>
+    <edge source="tci.demo.week3.legacycode.ManagingCompanyTest" target="tci.demo.week3.legacycode.Zebra">
+      <point x="-80.0" y="-15.0" />
+      <point x="25.800260416666674" y="135.0" />
+      <point x="28.987760416666674" y="135.0" />
+      <point x="-33.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.6" x="59.43749999999994" y="115.93749999999999" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

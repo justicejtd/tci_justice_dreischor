@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>tci.demo.week3.legacycode.looselycoupled.legacycode</OriginalElement>
+  <nodes>
+    <node x="108.0" y="80.0">tci.demo.week3.legacycode.looselycoupled.legacycode.Zoo</node>
+    <node x="29.75" y="160.0">tci.demo.week3.legacycode.looselycoupled.legacycode.ManagingCompany</node>
+    <node x="0.0" y="80.0">tci.demo.week3.legacycode.looselycoupled.legacycode.Zebra</node>
+    <node x="46.75" y="0.0">tci.demo.week3.legacycode.looselycoupled.legacycode.Animal</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="tci.demo.week3.legacycode.looselycoupled.legacycode.Zebra" target="tci.demo.week3.legacycode.looselycoupled.legacycode.Animal">
+      <point x="0.0" y="-15.0" />
+      <point x="44.0" y="55.0" />
+      <point x="70.75" y="55.0" />
+      <point x="-24.0" y="15.0" />
+    </edge>
+    <edge source="tci.demo.week3.legacycode.looselycoupled.legacycode.ManagingCompany" target="tci.demo.week3.legacycode.looselycoupled.legacycode.Zoo">
+      <point x="56.0" y="-15.0" />
+      <point x="169.75" y="135.0" />
+      <point x="162.0" y="135.0" />
+      <point x="18.0" y="15.0" />
+    </edge>
+    <edge source="tci.demo.week3.legacycode.looselycoupled.legacycode.ManagingCompany" target="tci.demo.week3.legacycode.looselycoupled.legacycode.Zebra">
+      <point x="-56.0" y="-15.0" />
+      <point x="57.75" y="135.0" />
+      <point x="44.0" y="135.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="tci.demo.week3.legacycode.looselycoupled.legacycode.Zoo" target="tci.demo.week3.legacycode.looselycoupled.legacycode.Animal">
+      <point x="0.0" y="-15.0" />
+      <point x="144.0" y="55.0" />
+      <point x="118.75" y="55.0" />
+      <point x="24.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="84.0" y="130.0" />
+  <SelectedNodes>
+    <node>tci.demo.week3.legacycode.looselycoupled.legacycode.Zoo</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
